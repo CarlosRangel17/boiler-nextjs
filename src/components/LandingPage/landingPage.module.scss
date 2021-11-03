@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.container {
+  padding: 66px 0px 192px;
+
+  @include min($mobile) {
+    padding: 109px 0 418px;
+  }
+
+  @include min($desktop) {
+    padding: 109px 0 414px;
+  }
+}
+
+.title,
+.subtext {
+  margin: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 52px;
+  padding-bottom: 15px;
+}
+
+.subtext {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
